@@ -20,7 +20,8 @@ public class Blackjack {
             if("n".equals(str)){
                 break;
             }else if("y".equals(str)){                        
-                Deck.playerHand.add(Deck.getDeck().get(deckcount));                    deckcount = deckcount + 1;
+                Deck.playerHand.add(Deck.getDeck().get(deckcount));                    
+                deckcount = deckcount + 1;
                 playerCount = playerCount + 1;
                 if(v_or_d.playerSum() > 21){
                     System.out.println("あなたは" + Deck.playerHand.get(playerCount) + "を引き、合計が" + v_or_d.playerSum() + "になりました。");
